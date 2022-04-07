@@ -1,6 +1,4 @@
-#pragma once
-
-#include <iostream>
+#include "assignment/assignments.hpp"
 
 namespace assignment {
 

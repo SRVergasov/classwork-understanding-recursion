@@ -1,4 +1,4 @@
-#include "assignment/code.hpp"
+#pragma once
 
 namespace assignment {
 
