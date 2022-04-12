@@ -6,6 +6,7 @@ namespace assignment {
   void LinkedList::ReverseIterative() {
     Node* previous = nullptr;
     Node* curr = front_;
+    back_ = front_;
 
     while (curr != nullptr) {
       Node* next = curr->next;
@@ -24,6 +25,7 @@ namespace assignment {
   // Вспомогательный метод для реализации рекурсивного переворачивания списка.
   void LinkedList::reverse_recursive_helper(Node*& curr, Node* prev) {
     if (curr == nullptr) {
+      back_ = front_;
       front_ = prev;
       return;
     }
